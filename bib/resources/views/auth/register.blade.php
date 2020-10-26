@@ -237,7 +237,7 @@
                 <span></span>
                 <span></span>
                 <span></span>
-                {{ __('Login') }}
+                {{ __('Register') }}
             </a>
         {{--                        <div class="form-group row">--}}
         {{--                            <div class="col-md-6 offset-md-4">--}}
