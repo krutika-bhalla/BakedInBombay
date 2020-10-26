@@ -12,7 +12,7 @@
         }
         .reg-form {
             position: absolute;
-            top: 65%;
+            top: 60%;
             left: 50%;
             width: 400px;
             padding: 40px;
@@ -71,7 +71,7 @@
             text-transform: uppercase;
             overflow: hidden;
             transition: .5s;
-            margin-top: 40px;
+            margin-top: 20px;
             letter-spacing: 4px
         }
         .reg-form a:hover {
