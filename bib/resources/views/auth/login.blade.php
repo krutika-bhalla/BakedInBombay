@@ -44,7 +44,7 @@
             outline: none;
             background: transparent;
           }
-          .login-form .form-group label {
+          .login-form .form-group ::placeholder {
             position: absolute;
             top:0;
             left: 0;
@@ -54,8 +54,8 @@
             pointer-events: none;
             transition: .5s;
           }
-          .login-form.form-group input:focus ~ label,
-          .login-form.form-group input:valid ~ label {
+          .login-form.form-group input:focus ~ ::placeholder,
+          .login-form.form-group input:valid ~ ::placeholder {
             top: -20px;
             left: 0;
             color: #03e9f4;
@@ -186,8 +186,8 @@
 {{--                            <label for="email" >{{ __('E-Mail Address') }}</label>--}}
 
                             <div class="form-group">
-                                <label for="email" >{{ __('E-Mail ID ') }}</label>
-                                <input id="email" type="email"  @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required="">
+
+                                <input id="email" type="email" placeholder="Email ID" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required="">
 
 
                                 @error('email')
@@ -199,10 +199,10 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="password">{{ __('Password') }}</label>
+
 
                             <div class="form-group">
-                                <input id="password" type="password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                <input id="password" type="password" placeholder="Password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
