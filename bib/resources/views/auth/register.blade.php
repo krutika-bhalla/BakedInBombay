@@ -61,7 +61,7 @@
             color: #03e9f4;
             font-size: 12px;
         }
-        .reg-form a {
+        .reg-form .a {
             position: relative;
             display: inline-block;
             padding: 10px 20px;
@@ -74,7 +74,7 @@
             margin-top: 20px;
             letter-spacing: 4px
         }
-        .reg-form a:hover {
+        .reg-form .a:hover {
             background: #03e9f4;
             color: #fff;
             border-radius: 5px;
@@ -84,12 +84,12 @@
             0 0 100px #03e9f4;
         }
 
-        .reg-form a span {
+        .reg-form .a span {
             position: absolute;
             display: block;
         }
 
-        .reg-form a span:nth-child(1) {
+        .reg-form .a span:nth-child(1) {
             top: 0;
             left: -100%;
             width: 100%;
@@ -106,7 +106,7 @@
             }
         }
 
-        .reg-form a span:nth-child(2) {
+        .reg-form .a span:nth-child(2) {
             top: -100%;
             right: 0;
             width: 2px;
@@ -125,7 +125,7 @@
             }
         }
 
-        .reg-form a span:nth-child(3) {
+        .reg-form .a span:nth-child(3) {
             bottom: 0;
             right: -100%;
             width: 100%;
@@ -144,7 +144,7 @@
             }
         }
 
-        .reg-form a span:nth-child(4) {
+        .reg-form .a span:nth-child(4) {
             bottom: -100%;
             left: 0;
             width: 2px;
@@ -179,6 +179,8 @@
     {{--                <div class="card-body">--}}
     {{--                    <form method="POST" action="{{ route('login') }}">--}}
     {{--                        @csrf--}}
+    <form method="POST" action="{{ route('register') }}">
+        @csrf
     <div class="reg-form">
         <h2>REGISTER</h2>
         <form>
@@ -188,8 +190,8 @@
 
                     @error('name')
                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                        <strong>{{ $message }}</strong>
+                    </span>
                     @enderror
                 </div>
             </div>
@@ -202,8 +204,8 @@
 
                     @error('email')
                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                        <strong>{{ $message }}</strong>
+                    </span>
                     @enderror
                 </div>
             </div>
@@ -222,23 +224,42 @@
 
             <div class="form-group">
                 <div class="form-group">
-                    <input id="confirmpassword" type="password" placeholder="Confirm Password" class="form-group @error('confirmpassword') is-invalid @enderror" name="confirmpassword" required autocomplete="new-password">
+                    <input id="confirmpassword" type="password" placeholder="Confirm Password" class="form-group @error('confirmpassword') is-invalid @enderror" name="password_confirmation" required autocomplete="new-password">
 
                     @error('confirmpassword')
                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                        <strong>{{ $message }}</strong>
+                    </span>
+                    @enderror
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <input id="mobile_number" type="tel" placeholder="Mobile Number" class="form-group @error('mobile_number') is-invalid @enderror" name="mobile_number" required autocomplete="mobile_number">
+
+                    @error('mobile_number')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
                     @enderror
                 </div>
             </div>
 
-            <a href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                {{ __('Login') }}
-            </a>
+
+{{--            <a type="button">--}}
+{{--                <span></span>--}}
+{{--                <span></span>--}}
+{{--                <span></span>--}}
+{{--                <span></span>--}}
+{{--                {{ __('Login') }}--}}
+{{--            </a>--}}
+            <div class="form-group row mb-0">
+                <div class="col-md-6 offset-md-4">
+                    <button type="submit" class="btn btn-primary">
+                        {{ __('Register') }}
+                    </button>
+                </div>
+            </div>
         {{--                        <div class="form-group row">--}}
         {{--                            <div class="col-md-6 offset-md-4">--}}
         {{--                                <div class="form-check">--}}
