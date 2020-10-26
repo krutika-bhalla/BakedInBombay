@@ -179,39 +179,36 @@
 {{--                <div class="card-body">--}}
 {{--                    <form method="POST" action="{{ route('login') }}">--}}
 {{--                        @csrf--}}
-                        <div class="login-form">
-                            <h2>LOGIN</h2>
-                            <form>
-                        <div class="form-group">
-{{--                            <label for="email" >{{ __('E-Mail Address') }}</label>--}}
+          <div class="login-form">
+              <h2>LOGIN</h2>
+              <form>
+                  <div class="form-group">
+                      <div class="form-group">
 
-                            <div class="form-group">
-
-                                <input id="email" type="email" placeholder="Email ID" @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required="">
+                          <input id="email" type="email" placeholder="Email ID" class="form-group @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
 
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
+                          @error('email')
+                          <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
-                            </div>
-                        </div>
+                          @enderror
+                      </div>
+                  </div>
 
-                        <div class="form-group">
+                  <div class="form-group">
+                      <div class="form-group">
+                          <input id="password" type="password" placeholder="Password" class="form-group @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
-
-                            <div class="form-group">
-                                <input id="password" type="password" placeholder="Password" @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
+                          @error('password')
+                          <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
-                            </div>
-                        </div>
-                        <a href="#">
+                          @enderror
+                      </div>
+                  </div>
+
+                   <a href="#">
                             <span></span>
                             <span></span>
                             <span></span>
