@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
          body {
            margin:0;
@@ -159,6 +160,12 @@
              }
              50%,100% {
                  bottom: 100%;
+             }
+         }
+         @media only screen and (max-width:481px) {
+             /* For mobile phones: */
+             .login-form {
+                 width:90%;
              }
          }
 
