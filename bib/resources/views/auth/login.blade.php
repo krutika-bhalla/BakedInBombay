@@ -177,45 +177,65 @@
 {{--                <div class="card-header">{{ __('Login') }}</div>--}}
 
 {{--                <div class="card-body">--}}
-{{--                    <form method="POST" action="{{ route('login') }}">--}}
-{{--                        @csrf--}}
-          <div class="login-form">
-              <h2>LOGIN</h2>
-              <form>
-                  <div class="form-group">
-                      <div class="form-group">
+{{--
+--}}
+    <form method="POST" action="{{ route('login') }}">
+                                @csrf
+                  <div class="login-form">
+                      <h2>LOGIN</h2>
+                      <form>
+                          <div class="form-group">
+                              <div class="form-group">
 
-                          <input id="email" type="email" placeholder="Email ID" class="form-group @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                  <input id="email" type="email" placeholder="Email ID" class="form-group @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
 
-                          @error('email')
-                          <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                          @enderror
-                      </div>
-                  </div>
+                                  @error('email')
+                                  <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                  @enderror
+                              </div>
+                          </div>
 
-                  <div class="form-group">
-                      <div class="form-group">
-                          <input id="password" type="password" placeholder="Password" class="form-group @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                          <div class="form-group">
+                              <div class="form-group">
+                                  <input id="password" type="password" placeholder="Password" class="form-group @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
-                          @error('password')
-                          <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                          @enderror
-                      </div>
-                  </div>
+                                  @error('password')
+                                  <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                  @enderror
+                              </div>
+{{--                              <div class="form-group">--}}
+{{--                                  <div class="form-group">--}}
+{{--                                      <input id="mobile_number" type="tel" placeholder="Mobile Number" class="form-group @error('mobile_number') is-invalid @enderror" name="mobile_number" required autocomplete="mobile-number">--}}
 
-                   <a href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            {{ __('Login') }}
-                        </a>
-{{--                        <div class="form-group row">--}}
+{{--                                      @error('mobile_number')--}}
+{{--                                      <span class="invalid-feedback" role="alert">--}}
+{{--                                          <strong>{{ $message }}</strong>--}}
+{{--                                      </span>--}}
+{{--                                      @enderror--}}
+{{--                                  </div>--}}
+{{--                              </div>--}}
+                          </div>
+
+{{--                           <a href="#">--}}
+{{--                                    <span></span>--}}
+{{--                                    <span></span>--}}
+{{--                                    <span></span>--}}
+{{--                                    <span></span>--}}
+{{--                                    {{ __('Login') }}--}}
+{{--                           </a>--}}
+                          <div class="form-group row mb-0">
+                              <div class="col-md-6 offset-md-4">
+                                  <button type="submit" class="btn btn-primary">
+                                      {{ __('Login') }}
+                                  </button>
+                              </div>
+                          </div>
+                              {{--                        <div class="form-group row">--}}
 {{--                            <div class="col-md-6 offset-md-4">--}}
 {{--                                <div class="form-check">--}}
 {{--                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>--}}
