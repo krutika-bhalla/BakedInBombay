@@ -12,7 +12,7 @@
         }
         .reg-form {
             position: absolute;
-            top: 60%;
+            top: 450px;
             left: 50%;
             width: 400px;
             padding: 40px;

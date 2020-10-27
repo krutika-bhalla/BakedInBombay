@@ -12,7 +12,7 @@
          }
              .login-form {
               position: absolute;
-              top: 50%;
+              top: 310px;
               left: 50%;
               width: 400px;
               padding: 40px;
