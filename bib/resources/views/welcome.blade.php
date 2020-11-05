@@ -3,7 +3,7 @@
 {{--    <head>--}}
 {{--        <meta charset="utf-8">--}}
 {{--        <meta name="viewport" content="width=device-width, initial-scale=1">--}}
-{{--        <link rel="icon" href="./images/logo.png" type="image/x-icon">--}}
+{{--        --}}
 {{--        <title>BakedInBombay</title>--}}
 {{--    {{asset("")}}--}}
 
@@ -147,13 +147,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site Metas -->
-    <title>Yamifood Restaurant - Responsive HTML5 Template</title>
+    <title>BakedInBombay</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{asset('./images/logo.png')}}" type="image/x-icon">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <!-- Bootstrap CSS -->
@@ -177,23 +177,24 @@
 <header class="top-navbar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo1.png" alt="" />
+            <a class="navbar-brand" href="{{url('/')}}">
+{{--                <img src="{{asset('images/logo.png')}}" style="max-height: 60px; max-width: 60px;" alt="" />--}}
+                <span style="color: #906636; font-size: 25px; font-weight: bold">BakedInBombay</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbars-rs-food">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                            <a class="dropdown-item" href="reservation.html">Reservation</a>
-                            <a class="dropdown-item" href="stuff.html">Stuff</a>
-                            <a class="dropdown-item" href="gallery.html">Gallery</a>
+                            <a class="dropdown-item" href="#">Order Now</a>
+                            <a class="dropdown-item" href="#">Stuff</a>
+                            <a class="dropdown-item" href="#">Gallery</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -217,40 +218,40 @@
 <div id="slides" class="cover-slides">
     <ul class="slides-container">
         <li class="text-center">
-            <img src="images/slider-01.jpg" alt="">
+            <img src="{{asset('imgs/IMG_9750.jpg')}}" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
+                        <h1 class="m-b-20"><strong>Welcome To <br> BakedInBombay</strong></h1>
                         <p class="m-b-40">See how your users experience your website in realtime or view  <br>
                             trends to see any changes in performance over time.</p>
-                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
+                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Order Now</a></p>
                     </div>
                 </div>
             </div>
         </li>
         <li class="text-center">
-            <img src="images/slider-02.jpg" alt="">
+            <img src="{{asset('imgs/IMG_9604.jpg')}}" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
+                        <h1 class="m-b-20"><strong>Welcome To <br> BakedInBombay</strong></h1>
                         <p class="m-b-40">See how your users experience your website in realtime or view  <br>
                             trends to see any changes in performance over time.</p>
-                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
+                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Order Now</a></p>
                     </div>
                 </div>
             </div>
         </li>
         <li class="text-center">
-            <img src="images/slider-03.jpg" alt="">
+            <img src="{{asset('imgs/IMG_9602.jpg')}}" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="m-b-20"><strong>Welcome To <br> Yamifood Restaurant</strong></h1>
+                        <h1 class="m-b-20"><strong>Welcome To <br> BakedInBombay</strong></h1>
                         <p class="m-b-40">See how your users experience your website in realtime or view  <br>
                             trends to see any changes in performance over time.</p>
-                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a></p>
+                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Order Now</a></p>
                     </div>
                 </div>
             </div>
@@ -272,11 +273,11 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 text-center">
                 <div class="inner-column">
-                    <h1>Welcome To <span>Yamifood Restaurant</span></h1>
+                    <h1>Welcome To <span>BakedInBombay</span></h1>
                     <h4>Little Story</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
                     <p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. Sed aliquam metus lorem, a pellentesque tellus pretium a. Nulla placerat elit in justo vestibulum, et maximus sem pulvinar.</p>
-                    <a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a>
+                    <a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Order Now</a>
                 </div>
             </div>
         </div>
@@ -442,33 +443,33 @@
         <div class="tz-gallery">
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                    <a class="lightbox" href="images/gallery-img-01.jpg">
-                        <img class="img-fluid" src="images/gallery-img-01.jpg" alt="Gallery Images">
+                    <a class="lightbox" href="{{asset('imgs/IMG_9603.jpg')}}">
+                        <img class="img-fluid" src="{{asset('imgs/IMG_9603.jpg')}}"  alt="Gallery Images">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4">
-                    <a class="lightbox" href="images/gallery-img-02.jpg">
-                        <img class="img-fluid" src="images/gallery-img-02.jpg" alt="Gallery Images">
+                    <a class="lightbox" href="{{asset('imgs/IMG_9748.jpg')}}">
+                        <img class="img-fluid" src="{{asset('imgs/IMG_9748.jpg')}}" alt="Gallery Images">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4">
-                    <a class="lightbox" href="images/gallery-img-03.jpg">
-                        <img class="img-fluid" src="images/gallery-img-03.jpg" alt="Gallery Images">
+                    <a class="lightbox" href="{{asset('imgs/IMG_9598.jpg')}}">
+                        <img class="img-fluid" src="{{asset('imgs/IMG_9598.jpg')}}" alt="Gallery Images">
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                    <a class="lightbox" href="images/gallery-img-04.jpg">
-                        <img class="img-fluid" src="images/gallery-img-04.jpg" alt="Gallery Images">
+                    <a class="lightbox" href="{{asset('imgs/IMG_9597.jpg')}}">
+                        <img class="img-fluid" src="{{asset('imgs/IMG_9597.jpg')}}" alt="Gallery Images">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4">
-                    <a class="lightbox" href="images/gallery-img-05.jpg">
-                        <img class="img-fluid" src="images/gallery-img-05.jpg" alt="Gallery Images">
+                    <a class="lightbox" href="{{asset('imgs/IMG_9744.jpg')}}">
+                        <img class="img-fluid" src="{{asset('imgs/IMG_9744.jpg')}}" alt="Gallery Images">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4">
-                    <a class="lightbox" href="images/gallery-img-06.jpg">
-                        <img class="img-fluid" src="images/gallery-img-06.jpg" alt="Gallery Images">
+                    <a class="lightbox" href="{{asset('imgs/IMG_9600.jpg')}}">
+                        <img class="img-fluid" src="{{asset('imgs/IMG_9600.jpg')}}" alt="Gallery Images">
                     </a>
                 </div>
             </div>
@@ -613,7 +614,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="company-name">All Rights Reserved. &copy; 2018 <a href="#">Yamifood Restaurant</a> Design By :
+                    <p class="company-name">All Rights Reserved. &copy; 2018 <a href="#">BakedInBombay</a> Design By :
                         <a href="https://html.design/">html design</a></p>
                 </div>
             </div>
