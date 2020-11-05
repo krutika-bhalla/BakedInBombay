@@ -575,7 +575,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <h3>About Us</h3>
-                <p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla cursus lorem ut nisi porta, ac eleifend arcu ultrices.</p>
+                <p>The idea of Baked in Bombay is to create a community that is willing to try different flavours and to share my take on some classics, too! In monetary terms, it's a #PayWhatYouWant model.</p>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h3>Opening hours</h3>
@@ -614,8 +614,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="company-name">All Rights Reserved. &copy; 2018 <a href="#">BakedInBombay</a> Design By :
-                        <a href="https://html.design/">html design</a></p>
+                    <p class="company-name">All Rights Reserved. &copy; 2020 <a href="#">BakedInBombay</a> Design By :
+                        <a href="https://html.design/">PSSK</a></p>
                 </div>
             </div>
         </div>
