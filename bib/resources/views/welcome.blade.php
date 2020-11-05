@@ -542,7 +542,7 @@
                 <div class="overflow-hidden">
                     <h4>Phone</h4>
                     <p class="lead">
-                        +01 123-456-4590
+                        +91 76669 98477
                     </p>
                 </div>
             </div>
@@ -551,7 +551,7 @@
                 <div class="overflow-hidden">
                     <h4>Email</h4>
                     <p class="lead">
-                        yourmail@gmail.com
+                        bakedinbombay@gmail.com
                     </p>
                 </div>
             </div>
@@ -587,8 +587,8 @@
             <div class="col-lg-3 col-md-6">
                 <h3>Contact information</h3>
                 <p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
-                <p class="lead"><a href="#">+01 2000 800 9999</a></p>
-                <p><a href="#"> info@admin.com</a></p>
+                <p class="lead"><a href="tel:7666998477">+91 76669 98477</a></p>
+                <p><a href="mailto:bakedinbombay@gmail.com?subject=subject"> bakedinbombay@gmail.com</a></p>
             </div>
             <div class="col-lg-3 col-md-6">
                 <h3>Subscribe</h3>
