@@ -560,7 +560,7 @@
                 <div class="overflow-hidden">
                     <h4>Location</h4>
                     <p class="lead">
-                        800, Lorem Street, US
+                        Balaram Babu Khedekar Marg, Ram nagar, Wadala West, Wadala, Mumbai, Maharashtra 400031
                     </p>
                 </div>
             </div>
@@ -586,7 +586,7 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <h3>Contact information</h3>
-                <p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
+                <p class="lead">Balaram Babu Khedekar Marg, Ram nagar, Wadala West, Wadala, Mumbai, Maharashtra 400031</p>
                 <p class="lead"><a href="tel:7666998477">+91 76669 98477</a></p>
                 <p><a href="mailto:bakedinbombay@gmail.com?subject=subject"> bakedinbombay@gmail.com</a></p>
             </div>
