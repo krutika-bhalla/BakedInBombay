@@ -27,6 +27,8 @@
                   padding: 0;
                   color: #fff;
                   text-align: center;
+                  font-weight: bold;
+                  font-size: xx-large;
            }
           .login-form .form-group
           {
@@ -172,9 +174,34 @@
                  width:90%;
              }
          }
+
          .btn{
-             background-color:#c1946a;
-             font-family: 'Athiti', sans-serif;
+             display: inline-block;
+             font-weight: 600;
+             text-align: center;
+             white-space: nowrap;
+             vertical-align: middle;
+             -webkit-user-select: none;
+             -moz-user-select: none;
+             -ms-user-select: none;
+             user-select: none;
+             border: 2px solid transparent;
+             padding: 12px 30px;
+             font-size: 16px;
+             line-height: 1.5;
+             border-radius: .1875rem;
+             transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+         }
+         .btn-outline-new-white {
+             color: #fff;
+             background-color: transparent;
+             background-image: none;
+             border-color: #fff;
+         }
+         .btn-outline-new-white:hover {
+             color: #cfa671;
+             background-color: #fff;
+             border-color: #fff;
          }
           </style>
 {{--<div class="container">--}}
