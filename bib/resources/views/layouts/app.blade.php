@@ -57,7 +57,7 @@
 <body>
     <div id="app">
         <header class="top-navbar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <header class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <a class="navbar-brand" href="{{url('/')}}">
                         {{--                <img src="{{asset('images/logo.png')}}" style="max-height: 60px; max-width: 60px;" alt="" />--}}
@@ -117,11 +117,14 @@
                 </div>
             </div>
         </nav>
+        </header>
 
         <main class="py-4">
             @yield('content')
         </main>
     </div>
-
+{{--    FOOTER  --}}
+    @include('layouts.footer')
+{{--    FOOTER END--}}
 </body>
 </html>
