@@ -8,7 +8,7 @@
            padding:0;
            /*font-family: sans-serif;*/
            /*background: linear-gradient(#141e30, #243b55);*/
-           background-color:#1a202c;
+           background-color:#dac292;
          }
              .login-form {
               position: absolute;
@@ -17,9 +17,9 @@
               width: 400px;
               padding: 40px;
               transform: translate(-50%, -50%);
-              background:#385d7a;
+              background:#c1946a;
               box-sizing: border-box;
-              box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+              box-shadow:  5px 10px 18px #4f3222;
               border-radius: 10px;
               }
           .login-form h2{
@@ -37,6 +37,7 @@
             width: 100%;
             padding: 10px 0;
             font-size: 16px;
+              font-family: 'Athiti', sans-serif;
             color: #fff;
             margin-bottom: 30px;
             border: none;
@@ -50,6 +51,7 @@
             left: 0;
             padding: 10px 0;
             font-size: 16px;
+              font-family: 'Athiti', sans-serif;
             color: #fff;
             pointer-events: none;
             transition: .5s;
@@ -58,15 +60,17 @@
           .login-form.form-group input:valid ~ ::placeholder {
             top: -20px;
             left: 0;
-            color: #03e9f4;
+            color: #bc5a45;
             font-size: 12px;
+              font-family: 'Athiti', sans-serif;
           }
           .login-form a {
             position: relative;
             display: inline-block;
             padding: 10px 20px;
-            color: #03e9f4;
+            color: #bc5a45;
             font-size: 16px;
+              font-family: 'Athiti', sans-serif;
             text-decoration: none;
             text-transform: uppercase;
             overflow: hidden;
@@ -75,13 +79,13 @@
             letter-spacing: 4px
           }
          .login-form a:hover {
-             background: #03e9f4;
+             background: #bc5a45;
              color: #fff;
              border-radius: 5px;
-             box-shadow: 0 0 5px #03e9f4,
-             0 0 25px #03e9f4,
-             0 0 50px #03e9f4,
-             0 0 100px #03e9f4;
+             box-shadow: 0 0 5px #bc5a45,
+             0 0 25px #bc5a45,
+             0 0 50px #bc5a45,
+             0 0 100px #bc5a45;
          }
 
          .login-form a span {
@@ -94,7 +98,7 @@
              left: -100%;
              width: 100%;
              height: 2px;
-             background: linear-gradient(90deg, transparent, #03e9f4);
+             background: linear-gradient(90deg, transparent, #bc5a45);
              animation: btn-anim1 1s linear infinite;
          }
          @keyframes btn-anim1 {
@@ -111,7 +115,7 @@
              right: 0;
              width: 2px;
              height: 100%;
-             background: linear-gradient(180deg, transparent, #03e9f4);
+             background: linear-gradient(180deg, transparent, #bc5a45);
              animation: btn-anim2 1s linear infinite;
              animation-delay: .25s
          }
@@ -130,7 +134,7 @@
              right: -100%;
              width: 100%;
              height: 2px;
-             background: linear-gradient(270deg, transparent, #03e9f4);
+             background: linear-gradient(270deg, transparent, #bc5a45);
              animation: btn-anim3 1s linear infinite;
              animation-delay: .5s
          }
@@ -149,7 +153,7 @@
              left: 0;
              width: 2px;
              height: 100%;
-             background: linear-gradient(360deg, transparent, #03e9f4);
+             background: linear-gradient(360deg, transparent, #bc5a45);
              animation: btn-anim4 1s linear infinite;
              animation-delay: .75s
          }
@@ -168,7 +172,10 @@
                  width:90%;
              }
          }
-
+         .btn{
+             background-color:#c1946a;
+             font-family: 'Athiti', sans-serif;
+         }
           </style>
 {{--<div class="container">--}}
 {{--    <div class="row justify-content-center">--}}
@@ -230,7 +237,7 @@
 {{--                           </a>--}}
                           <div class="form-group row mb-0">
                               <div class="col-md-6 offset-md-4">
-                                  <button type="submit" class="btn btn-primary">
+                                  <button type="submit" class="btn btn-lg btn-circle btn-outline-new-white">
                                       {{ __('Login') }}
                                   </button>
                               </div>

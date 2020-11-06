@@ -12,6 +12,9 @@
       <excludeFolder url="file://$MODULE_DIR$/bib/vendor/brick/math" />
       <excludeFolder url="file://$MODULE_DIR$/bib/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/bib/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/bib/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/bib/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/bib/vendor/doctrine/event-manager" />
       <excludeFolder url="file://$MODULE_DIR$/bib/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/bib/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/bib/vendor/doctrine/lexer" />
@@ -29,6 +32,7 @@
       <excludeFolder url="file://$MODULE_DIR$/bib/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/bib/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/bib/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/bib/vendor/jfcherng/php-mb-string" />
       <excludeFolder url="file://$MODULE_DIR$/bib/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/bib/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/bib/vendor/laravel/ui" />
