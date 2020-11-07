@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aee700c8-2c6c-420f-9781-a3fe1297d457" name="Default Changelist" comment="" />
+    <list default="true" id="aee700c8-2c6c-420f-9781-a3fe1297d457" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/BakedInBombay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BakedInBombay.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/bib/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/bib/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/bib/resources/views/welcome.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,6 +150,10 @@
       <path value="$PROJECT_DIR$/bib/vendor/psr/log" />
       <path value="$PROJECT_DIR$/bib/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/bib/vendor/jfcherng/php-mb-string" />
+      <path value="$PROJECT_DIR$/bib/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/bib/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/bib/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/bib/vendor/symfony/polyfill-php70" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jT1mi9CQMtbbPg1BzNmczZjOQu" />
@@ -136,6 +165,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -149,16 +184,36 @@
       <workItem from="1603813435436" duration="543000" />
       <workItem from="1604037328936" duration="88000" />
       <workItem from="1604655755469" duration="5105000" />
+      <workItem from="1604747488443" duration="3757000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604749154823">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604749154823" />
     <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1604037381206">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604037381206" />
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1604748505546">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1604748505546" />
   </component>
 </project>
