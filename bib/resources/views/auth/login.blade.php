@@ -204,20 +204,11 @@
              border-color: #fff;
          }
           </style>
-{{--<div class="container">--}}
-{{--    <div class="row justify-content-center">--}}
-{{--        <div class="col-md-8">--}}
-{{--            <div class="card">--}}
-{{--                <div class="card-header">{{ __('Login') }}</div>--}}
-
-{{--                <div class="card-body">--}}
-{{--
---}}
     <form method="POST" action="{{ route('login') }}">
                                 @csrf
                   <div class="login-form">
                       <h2>LOGIN</h2>
-                      <form>
+                      <div>
                           <div class="form-group">
                               <div class="form-group">
 
@@ -242,26 +233,7 @@
                                             </span>
                                   @enderror
                               </div>
-{{--                              <div class="form-group">--}}
-{{--                                  <div class="form-group">--}}
-{{--                                      <input id="mobile_number" type="tel" placeholder="Mobile Number" class="form-group @error('mobile_number') is-invalid @enderror" name="mobile_number" required autocomplete="mobile-number">--}}
-
-{{--                                      @error('mobile_number')--}}
-{{--                                      <span class="invalid-feedback" role="alert">--}}
-{{--                                          <strong>{{ $message }}</strong>--}}
-{{--                                      </span>--}}
-{{--                                      @enderror--}}
-{{--                                  </div>--}}
-{{--                              </div>--}}
                           </div>
-
-{{--                           <a href="#">--}}
-{{--                                    <span></span>--}}
-{{--                                    <span></span>--}}
-{{--                                    <span></span>--}}
-{{--                                    <span></span>--}}
-{{--                                    {{ __('Login') }}--}}
-{{--                           </a>--}}
                           <div class="form-group row mb-0">
                               <div class="col-md-6 offset-md-4">
                                   <button type="submit" class="btn btn-lg btn-circle btn-outline-new-white">
@@ -269,36 +241,80 @@
                                   </button>
                               </div>
                           </div>
-                              {{--                        <div class="form-group row">--}}
-{{--                            <div class="col-md-6 offset-md-4">--}}
-{{--                                <div class="form-check">--}}
-{{--                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>--}}
+                      </div>
+                  </div>
+        </div>
+    </form>
 
-{{--                                    <label class="form-check-label" for="remember">--}}
-{{--                                        {{ __('Remember Me') }}--}}
-{{--                                    </label>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-
-{{--                        <div class="form-group row mb-0">--}}
-{{--                            <div class="col-md-8 offset-md-4">--}}
-{{--                                <button type="submit" class="btn btn-primary">--}}
-{{--                                    {{ __('Login') }}--}}
-{{--                                </button>--}}
-
-{{--                                @if (Route::has('password.request'))--}}
-{{--                                    <a class="btn btn-link" href="{{ route('password.request') }}">--}}
-{{--                                        {{ __('Forgot Your Password?') }}--}}
-{{--                                    </a>--}}
-{{--                                @endif--}}
-                            </div>
-                        </div>
-                    </form>
+    <!-- Start Footer -->
+    <footer class="footer-area bg-f">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h3>About Us</h3>
+                    <p>The idea of Baked in Bombay is to create a community that is willing to try different flavours and to share my take on some classics, too! In monetary terms, it's a #PayWhatYouWant model.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Opening hours</h3>
+                    <p><span class="text-color">Monday: </span>Closed</p>
+                    <p><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
+                    <p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
+                    <p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Contact information</h3>
+                    <p class="lead">Balaram Babu Khedekar Marg, Ram nagar, Wadala West, Wadala, Mumbai, Maharashtra 400031</p>
+                    <p class="lead"><a href="tel:7666998477">+91 76669 98477</a></p>
+                    <p><a href="mailto:bakedinbombay@gmail.com?subject=subject"> bakedinbombay@gmail.com</a></p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3>Subscribe</h3>
+                    <div class="subscribe_form">
+                        <form class="subscribe_form">
+                            <input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+                            <button type="submit" class="submit">SUBSCRIBE</button>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                    <ul class="list-inline f-social">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="company-name">All Rights Reserved. &copy; 2020 <a href="#">BakedInBombay</a> Design By :
+                            <a href="https://html.design/">PSSK</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+{{--    <!-- ALL JS FILES -->--}}
+{{--    <script src="js/jquery-3.2.1.min.js"></script>--}}
+{{--    <script src="js/popper.min.js"></script>--}}
+{{--    <script src="js/bootstrap.min.js"></script>--}}
+{{--    <!-- ALL PLUGINS -->--}}
+{{--    <script src="js/jquery.superslides.min.js"></script>--}}
+{{--    <script src="js/images-loded.min.js"></script>--}}
+{{--    <script src="js/isotope.min.js"></script>--}}
+{{--    <script src="js/baguetteBox.min.js"></script>--}}
+{{--    <script src="js/form-validator.min.js"></script>--}}
+{{--    <script src="js/contact-form-script.js"></script>--}}
+{{--    <script src="js/custom.js"></script>--}}
+
 @endsection
 
