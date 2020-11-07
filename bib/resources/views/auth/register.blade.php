@@ -11,7 +11,7 @@
             background-color:#dac292;
         }
         .reg-form {
-            position: absolute;
+            position: relative;
             top: 450px;
             left: 50%;
             width: 400px;
@@ -21,6 +21,7 @@
             box-sizing: border-box;
             box-shadow: 5px 10px 18px #4f3222;
             border-radius: 10px;
+            margin-bottom: 150px;
         }
         .reg-form h2{
             margin: 0 0 30px;
