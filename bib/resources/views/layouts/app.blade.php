@@ -124,7 +124,7 @@
         </main>
     </div>
 {{--    FOOTER  --}}
-    @include('layouts.footer')
+{{--    @include('layouts.footer')--}}
 {{--    FOOTER END--}}
 </body>
 </html>
