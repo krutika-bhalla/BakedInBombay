@@ -79,7 +79,7 @@
 <div id="slides" class="cover-slides">
     <ul class="slides-container">
         <li class="text-center">
-            <img src="{{asset('imgs/IMG_9750.jpg')}}" alt="">
+            <img src="{{asset('imgs/IMG_5921.jpg')}}" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -92,7 +92,7 @@
             </div>
         </li>
         <li class="text-center">
-            <img src="{{asset('imgs/IMG_9604.jpg')}}" alt="">
+            <img src="{{asset('imgs/IMG_5794.jpg')}}" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -105,7 +105,7 @@
             </div>
         </li>
         <li class="text-center">
-            <img src="{{asset('imgs/IMG_9602.jpg')}}" alt="">
+            <img src="{{asset('imgs/IMG_5742.jpg')}}" alt="">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -306,22 +306,22 @@
         <div class="tz-gallery">
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                    <a class="lightbox" href="{{asset('imgs/IMG_5921.jpg')}}">
-                        <img class="img-fluid" src="{{asset('imgs/IMG_5921.jpg')}}"  alt="Gallery Images">
+                    <a class="lightbox" href="{{asset('imgs/IMG_9604.jpg')}}">
+                        <img class="img-fluid" src="{{asset('imgs/IMG_9604.jpg')}}"  alt="Gallery Images">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4">
-                    <a class="lightbox" href="{{asset('imgs/IMG_6023.jpg')}}">
-                        <img class="img-fluid" src="{{asset('imgs/IMG_6023.jpg')}}" alt="Gallery Images">
+                    <a class="lightbox" href="{{asset('imgs/IMG_9750.jpg')}}">
+                        <img class="img-fluid" src="{{asset('imgs/IMG_9750.jpg')}}" alt="Gallery Images">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-4">
-                    <a class="lightbox" href="{{asset('imgs/IMG_5794.jpg')}}">
-                        <img class="img-fluid" src="{{asset('imgs/IMG_5794.jpg')}}" alt="Gallery Images">
+                    <a class="lightbox" href="{{asset('imgs/IMG_9602.jpg')}}">
+                        <img class="img-fluid" src="{{asset('imgs/IMG_9602.jpg')}}" alt="Gallery Images">
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4">
-                    <a class="lightbox" href="{{asset('imgs/IMG_5742.jpg')}}">
+                    <a class="lightbox" href="">
                         <img class="img-fluid" src="{{asset('imgs/IMG_5742.jpg')}}" alt="Gallery Images">
                     </a>
                 </div>
