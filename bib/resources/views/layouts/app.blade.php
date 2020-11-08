@@ -233,5 +233,12 @@
 {{--    FOOTER  --}}
 {{--    @include('layouts.footer')--}}
 {{--    FOOTER END--}}
+
+{{--   js files   --}}
+<main>
+    @yield('js-scripts')
+</main>
+
+
 </body>
 </html>
