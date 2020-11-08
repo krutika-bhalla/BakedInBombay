@@ -25,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $users = Auth::User()->user_type;
-        return view('home')->with('users', $users);
+        $user = Auth::User();
+        return view('home')->with('user', $user);
     }
 }
