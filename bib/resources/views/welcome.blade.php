@@ -81,18 +81,18 @@
 <!-- End About -->
 
 <!-- Start QT -->
-<div class="qt-box qt-background">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 ml-auto mr-auto text-left">
-                <p class="lead " style="text-align: center">
-                    #ExperimentalBaking
-                </p>
-                <span class="lead"></span>
-            </div>
-        </div>
-    </div>
-</div>
+{{--<div class="qt-box qt-background">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-md-8 ml-auto mr-auto text-left">--}}
+{{--                <p class="lead " style="text-align: center">--}}
+{{--                    #ExperimentalBaking--}}
+{{--                </p>--}}
+{{--                <span class="lead"></span>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 <!-- End QT -->
 
 <!-- Start Menu -->
@@ -327,12 +327,13 @@
     </div>
 </div>
 <!-- End Customer Reviews -->
+@endsection
 
-
+@section('js-scripts')
 <!-- ALL JS FILES -->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+{{--<script src="js/bootstrap.min.js"></script>--}}
 <!-- ALL PLUGINS -->
 <script src="js/jquery.superslides.min.js"></script>
 <script src="js/images-loded.min.js"></script>
