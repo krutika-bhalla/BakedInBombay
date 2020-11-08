@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->bigInteger('mobile_number')->unique();
             $table->mediumText('address');
-            $table->string('user_type')->nullable();
+            $table->string('user_type')->default('user');
             $table->bigInteger('no_of_items');
             $table->rememberToken();
             $table->timestamps();
