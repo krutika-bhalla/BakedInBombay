@@ -188,6 +188,7 @@
              user-select: none;
              border: 2px solid transparent;
              padding: 12px 30px;
+
              font-size: 16px;
              line-height: 1.5;
              border-radius: .1875rem;
@@ -238,7 +239,7 @@
                               </div>
                           </div>
                           <div class="form-group row mb-0">
-                              <div class="col-md-6 offset-md-4">
+                              <div class="col text-center">
                                   <button type="submit" class="btn btn-lg btn-circle btn-outline-new-white">
                                       {{ __('Login') }}
                                   </button>
