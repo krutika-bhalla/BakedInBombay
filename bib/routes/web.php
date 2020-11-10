@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::group(['middleware' => 'auth'], function () {
+
+    Route::get('/home', [App\Http\Controllers\AdminController::class, 'index'])->name('show-menu');
+    Route::post('/home',[App\Http\Controllers\AdminController::class, 'storeMenu'])->name('save-menu');
+});
