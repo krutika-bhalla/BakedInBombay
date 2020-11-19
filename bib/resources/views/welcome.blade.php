@@ -13,7 +13,7 @@
                         <h1 class="m-b-20"><strong>Welcome To <br> BakedInBombay</strong></h1>
                         <p class="m-b-40">See how your users experience your website in realtime or view  <br>
                             trends to see any changes in performance over time.</p>
-                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="{{route('home-page')}}">Order Now</a></p>
+                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="{{route('show-menu')}}">Order Now</a></p>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
                         <h1 class="m-b-20"><strong>Welcome To <br> BakedInBombay</strong></h1>
                         <p class="m-b-40">See how your users experience your website in realtime or view  <br>
                             trends to see any changes in performance over time.</p>
-                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="{{route('home-page')}}">Order Now</a></p>
+                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="{{route('show-menu')}}">Order Now</a></p>
                     </div>
                 </div>
             </div>
@@ -39,15 +39,15 @@
                         <h1 class="m-b-20"><strong>Welcome To <br> BakedInBombay</strong></h1>
                         <p class="m-b-40">See how your users experience your website in realtime or view  <br>
                             trends to see any changes in performance over time.</p>
-                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="{{route('home-page')}}">Order Now</a></p>
+                        <p><a class="btn btn-lg btn-circle btn-outline-new-white" href="{{route('show-menu')}}">Order Now</a></p>
                     </div>
                 </div>
             </div>
         </li>
     </ul>
     <div class="slides-navigation">
-        <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-        <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        <a href="{{route('show-menu')}}" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <a href="{{route('show-menu')}}" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
     </div>
 </div>
 <!-- End slides -->
@@ -65,9 +65,9 @@
                 <div class="inner-column">
                     <h1>Welcome To <span>BakedInBombay</span></h1>
                     <h4>Little Story</h4>
-                    <p>Baked in Bombay comes out of a place of love for baking and love for my home-page city Bombay. Bombay for me is all about the community, is all about being inclusive and all about being a home-page. And as tradition in most Bombay home-pages, you can never leave your house without having some sweet.</p>
+                    <p>Baked in Bombay comes out of a place of love for baking and love for my home city Bombay. Bombay for me is all about the community, is all about being inclusive and all about being a home. And as tradition in most Bombay homes, you can never leave your house without having some sweet.</p>
                     <p>So here is a community that embraces the culture and it's people at the same embracing flavors that are one of a kind 🌻</p>
-                    <a class="btn btn-lg btn-circle btn-outline-new-white" style="margin-bottom: 20px" href="{{route('home-page')}}">Order Now</a>
+                    <a class="btn btn-lg btn-circle btn-outline-new-white" style="margin-bottom: 20px" href="{{route('show-menu')}}">Order Now</a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
