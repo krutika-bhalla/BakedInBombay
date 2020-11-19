@@ -68,17 +68,26 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbars-rs-food">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active"><a class="nav-link" href="{{url('/')}}">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+{{--                            <li class="nav-item active"><a class="nav-link" href="{{url('/')}}">Home</a></li>--}}
+                            <ul class="nav nav-pills">
+                                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                            </ul>
                             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                                    <a class="dropdown-item" href="#">Order Now</a>
-                                    <a class="dropdown-item" href="#">Stuff</a>
-                                    <a class="dropdown-item" href="#">Gallery</a>
-                                </div>
-                            </li>
+{{--                    Scroll spy bootstrap--}}
+                            <ul class="nav nav-pills">
+                                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                            </ul>
+{{--                    Scroll spy bootstrap--}}
+                            <ul class="nav nav-pills">
+                                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                            </ul>
+{{--                            <li class="nav-item dropdown">--}}
+{{--                                <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>--}}
+{{--                                <div class="dropdown-menu" aria-labelledby="dropdown-a">--}}
+{{--                                    <a class="dropdown-item" href="{{route('show-menu')}}">Order Now</a>--}}
+{{--                                    <a class="dropdown-item" href="#">Stuff</a>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdown-a">
@@ -86,7 +95,7 @@
                                     <a class="dropdown-item" href="blog-details.html">blog Single</a>
                                 </div>
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
@@ -126,7 +135,8 @@
     </div>
 
     <!-- Start Contact info -->
-    <div class="contact-imfo-box">
+    {{--   Scroll spy bootstrap--}}
+    <div class="contact-imfo-box" data-spy="scroll" data-target="#navbar-example2" data-offset="0" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">

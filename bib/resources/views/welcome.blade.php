@@ -96,7 +96,7 @@
 <!-- End QT -->
 
 <!-- Start Menu -->
-<div class="menu-box">
+<div class="menu-box" data-spy="scroll" data-target="#navbar-example2" data-offset="0" id="menu">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -225,7 +225,8 @@
 <!-- End Menu -->
 
 <!-- Start Gallery -->
-<div class="gallery-box">
+{{--   Scroll spy bootstrap--}}
+<div class="gallery-box" data-spy="scroll" data-target="#navbar-example2" data-offset="0" id="gallery">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
