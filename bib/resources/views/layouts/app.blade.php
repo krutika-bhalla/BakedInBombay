@@ -143,7 +143,7 @@
                     <div class="overflow-hidden">
                         <h4>Email</h4>
                         <p class="lead">
-                            bakedinbombay@gmail.com
+                            bakedinbombay.co@gmail.com
                         </p>
                     </div>
                 </div>
@@ -180,7 +180,7 @@
                     <h3>Contact information</h3>
                     <p class="lead">Balaram Babu Khedekar Marg, Ram nagar, Wadala West, Wadala, Mumbai, Maharashtra 400031</p>
                     <p class="lead"><a href="tel:7666998477">+91 76669 98477</a></p>
-                    <p><a href="mailto:bakedinbombay@gmail.com?subject=subject"> bakedinbombay@gmail.com</a></p>
+                    <p><a href="mailto:bakedinbombay@gmail.com?subject=subject"> bakedinbombay.co@gmail.com</a></p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h3>Subscribe</h3>
