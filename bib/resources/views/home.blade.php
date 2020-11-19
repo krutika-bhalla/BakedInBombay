@@ -77,55 +77,69 @@
 @if ($user->user_type == 'admin')
     <br/><br/><br/><br/>
 
-       <!-- Button trigger modal -->
-           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-               Add Items
-           </button>
 
-           <!-- Modal -->
-    <form method="POST" action="{{route('save-menu')}}">
-        @csrf
-           <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-               <div class="modal-dialog modal-dialog-centered" role="document">
-                   <div class="modal-content">
-                       <div class="modal-header">
-                           <h3 class="modal-title" id="exampleModalLongTitle"><strong>Add New Item</strong></h3>
-                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                               <span aria-hidden="true">&times;</span>
-                           </button>
-                       </div>
-                       <div class="modal-body">
-                           <div class="form-group">
-                               <label for="exampleInputPassword1">Name</label>
-                               <input type="text" name="item_name" class="form-control" id="exampleInputPassword1" placeholder="Name">
-                           </div>
-                           <div class="form-group">
-                               <label for="exampleInputPassword1">Number of Boxes</label>
-                               <input type="text" name="available_boxes" class="form-control" id="exampleInputPassword1" placeholder="Boxes">
-                           </div>
-                           <div class="form-group">
-                               <label for="exampleFormControlFile1">Image</label>
-                               <input type="file" class="form-control-file" name="image" id="exampleFormControlFile1">
-                           </div>
-{{--                           <label>Activity Status</label>--}}
+<!--   ALERT   -->
+{{--    @if($message = Session::get("success"))--}}
+{{--        <h3 class="text-center text-success">{{$message}}</h3>--}}
+{{--    @endif--}}
+    <script>
+        var msg = '{{Session::get('alert')}}';
+        var exist = '{{Session::has('alert')}}';
+        if(exist){
+            alert(msg);
+        }
+    </script>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        Add Items
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLongTitle"><strong>Add New Item</strong></h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="{{route('save-menu')}}" enctype="multipart/form-data">
+                        @csrf
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Name</label>
+                            <input required type="text" name="item_name" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Number of Boxes</label>
+                            <input required type="text" name="available_boxes" class="form-control" id="exampleInputPassword1" placeholder="Boxes">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Image</label>
+                            <input required type="file" class="form-control-file" name="image" accept="image/*"  id="exampleFormControlFile1">
+                        </div>
+{{--                          <label>Activity Status</label>--}}
 {{--                           <label class="switch">--}}
-{{--                               <input type="checkbox" name="is_active" checked>--}}
+{{--                               <input required type="checkbox" name="is_active" checked>--}}
 {{--                               <span class="slider round"></span>--}}
 {{--                           </label>--}}
+                        <div class="modal-footer">
+        {{--                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--}}
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                       </div>
 
-                       <div class="modal-footer">
-{{--                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--}}
-                           <button type="submit" class="btn btn-primary">Save</button>
-                       </div>
-                   </div>
-               </div>
-           </div>
-   </form>
+{{--        CARD OF MENUS--}}
+
 @endif
 
-
+{{--{{dd($menu_items, $images)}}--}}
+{{--{{dd()}}--}}
 
 
 
