@@ -70,16 +70,16 @@
                         <ul class="navbar-nav ml-auto">
 {{--                            <li class="nav-item active"><a class="nav-link" href="{{url('/')}}">Home</a></li>--}}
                             <ul class="nav nav-pills">
-                                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('/#menu')}}">Menu</a></li>
                             </ul>
-                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{url('/#about')}}">About</a></li>
 {{--                    Scroll spy bootstrap--}}
                             <ul class="nav nav-pills">
-                                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('/#gallery')}}">Gallery</a></li>
                             </ul>
 {{--                    Scroll spy bootstrap--}}
                             <ul class="nav nav-pills">
-                                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{url('/#contact')}}">Contact</a></li>
                             </ul>
 {{--                            <li class="nav-item dropdown">--}}
 {{--                                <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>--}}

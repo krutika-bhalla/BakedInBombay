@@ -53,7 +53,7 @@
 <!-- End slides -->
 
 <!-- Start About -->
-<div class="about-section-box">
+<div class="about-section-box" data-spy="scroll" data-target="#navbar-example2" data-offset="0" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12">
