@@ -42,7 +42,7 @@ class HomeController extends Controller
             'item_name' => 'required | string| max:140',
             //          'is_active' => 'boolean',
             'price' => 'integer | required ',
-            'image' => 'required|image|mimes:jpeg,png,jpg|max:9999',
+            'image' => 'required|image|mimes:jpeg,png,jpg|max:999999',
         ]);
 //image naming
         $imageName =  time().'.'.$request->image->extension();
