@@ -19,9 +19,7 @@
       <path value="$PROJECT_DIR$/bib/vendor/sebastian/object-enumerator" />
       <path value="$PROJECT_DIR$/bib/vendor/sebastian/object-reflector" />
       <path value="$PROJECT_DIR$/bib/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/bib/vendor/sebastian/resource-operations" />
       <path value="$PROJECT_DIR$/bib/vendor/sebastian/type" />
-      <path value="$PROJECT_DIR$/bib/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/bib/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/bib/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/bib/vendor/symfony/css-selector" />
@@ -94,7 +92,6 @@
       <path value="$PROJECT_DIR$/bib/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/bib/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/bib/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/bib/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/bib/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/bib/vendor/phpoption/phpoption" />
       <path value="$PROJECT_DIR$/bib/vendor/phpspec/prophecy" />
@@ -115,6 +112,9 @@
       <path value="$PROJECT_DIR$/bib/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/bib/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/bib/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/bib/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/bib/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/bib/vendor/sebastian/resource-operations" />
     </include_path>
   </component>
   <component name="PhpUnit">

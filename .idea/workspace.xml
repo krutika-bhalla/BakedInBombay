@@ -58,9 +58,7 @@
       <path value="$PROJECT_DIR$/bib/vendor/sebastian/object-enumerator" />
       <path value="$PROJECT_DIR$/bib/vendor/sebastian/object-reflector" />
       <path value="$PROJECT_DIR$/bib/vendor/sebastian/recursion-context" />
-      <path value="$PROJECT_DIR$/bib/vendor/sebastian/resource-operations" />
       <path value="$PROJECT_DIR$/bib/vendor/sebastian/type" />
-      <path value="$PROJECT_DIR$/bib/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/bib/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/bib/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/bib/vendor/symfony/css-selector" />
@@ -133,7 +131,6 @@
       <path value="$PROJECT_DIR$/bib/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/bib/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/bib/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/bib/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/bib/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/bib/vendor/phpoption/phpoption" />
       <path value="$PROJECT_DIR$/bib/vendor/phpspec/prophecy" />
@@ -154,6 +151,9 @@
       <path value="$PROJECT_DIR$/bib/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/bib/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/bib/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/bib/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/bib/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/bib/vendor/sebastian/resource-operations" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jT1mi9CQMtbbPg1BzNmczZjOQu" />
@@ -164,7 +164,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/ajax" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -185,6 +185,7 @@
       <workItem from="1604037328936" duration="88000" />
       <workItem from="1604655755469" duration="5105000" />
       <workItem from="1604747488443" duration="3757000" />
+      <workItem from="1606397808558" duration="623000" />
     </task>
     <servers />
   </component>
@@ -201,16 +202,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604749154823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604749154823" />
-    <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1604037381206">
+    <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1606398234932">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604037381206" />
+    <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606398234932" />
     <state x="604" y="336" key="NewPhpFileDialog" timestamp="1604748505546">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

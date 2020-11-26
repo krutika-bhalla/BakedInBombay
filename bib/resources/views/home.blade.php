@@ -77,7 +77,7 @@
 @if ($user->user_type == 'admin')
     <br/><br/><br/><br/>
     {{--        CARD OF MENUS--}}
-
+    <div class="table-responsive">
     <table class="table table-striped">
         <thead>
         <tr>
@@ -97,13 +97,13 @@
                 <td>{{$items->image}}</td>
                 <td>{{ucwords($items->item_name)}}</td>
                 <td>{{$items->price}}</td>
-                <a href="{{ route('delete', $items->id) }}" class="btn btn-sm btn-outline-danger"><i class="fa fa-times"></i></a>
+                <td><a href="{{ route('delete', $items->id) }}" class="btn btn-sm btn-outline-danger"><i class="fa fa-times"></i></a></td>
             </tr>
         @endforeach
         </tbody>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-            Add Items
-        </button>
+    </table>
+    </div>
+
 
 <!--   ALERT   -->
 {{--    @if($message = Session::get("success"))--}}
@@ -122,7 +122,11 @@
         }
     </script>
     <!-- Button trigger modal -->
-
+        <div align="center">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Add Items
+        </button>
+        </div>
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
