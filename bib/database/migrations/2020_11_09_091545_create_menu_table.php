@@ -17,7 +17,7 @@ class CreateMenuTable extends Migration
             $table->id();
             $table->string('item_name');
           //  $table->boolean('is_active')->default(true);
-            $table->integer('available_boxes');
+            $table->integer('price');
             $table->string('image');
             $table->timestamps();
         });

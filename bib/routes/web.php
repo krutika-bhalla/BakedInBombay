@@ -27,5 +27,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/home',[App\Http\Controllers\HomeController::class, 'storeMenu'])->name('save-menu');
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'showMenu'])->name('show-menu');
     //Route::get('/tester',[App\Http\Controllers\MenuController::class, 'storeMenu'])->name('save-menu');
+    Route::get('delete/{id}', [App\Http\Controllers\HomeController::class, 'delete'])->name('delete');
 
 });

@@ -76,7 +76,34 @@
 
 @if ($user->user_type == 'admin')
     <br/><br/><br/><br/>
+    {{--        CARD OF MENUS--}}
 
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            {{--            <th scope="col"></th>--}}
+            <th scope="col">Sr.No</th>
+            <th scope="col">Image</th>
+            <th scope="col">Item</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach($menu_items as $items)
+            <tr>
+
+                <td>{{ $loop->iteration }}</td>
+                <td>{{$items->image}}</td>
+                <td>{{ucwords($items->item_name)}}</td>
+                <td>{{$items->price}}</td>
+                <a href="{{ route('delete', $items->id) }}" class="btn btn-sm btn-outline-danger"><i class="fa fa-times"></i></a>
+            </tr>
+        @endforeach
+        </tbody>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            Add Items
+        </button>
 
 <!--   ALERT   -->
 {{--    @if($message = Session::get("success"))--}}
@@ -88,11 +115,14 @@
         if(exist){
             alert(msg);
         }
+        var msg = '{{Session::get('success')}}';
+        var exist = '{{Session::has('success')}}';
+        if(exist){
+            alert(msg);
+        }
     </script>
     <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Add Items
-    </button>
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -111,8 +141,8 @@
                             <input required type="text" name="item_name" class="form-control" id="exampleInputPassword1" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Number of Boxes</label>
-                            <input required type="text" name="available_boxes" class="form-control" id="exampleInputPassword1" placeholder="Boxes">
+                            <label for="exampleInputPassword1">Price</label>
+                            <input required type="text" name="price" class="form-control" id="exampleInputPassword1" placeholder="Add Price">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlFile1">Image</label>
@@ -134,7 +164,7 @@
     </div>
 
 
-{{--        CARD OF MENUS--}}
+
 
 @endif
 

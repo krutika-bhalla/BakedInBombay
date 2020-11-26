@@ -41,7 +41,7 @@ class HomeController extends Controller
         $request->validate([
             'item_name' => 'required | string| max:140',
             //          'is_active' => 'boolean',
-            'available_boxes' => 'integer | required ',
+            'price' => 'integer | required ',
             'image' => 'required|image|mimes:jpeg,png,jpg|max:9999',
         ]);
 //image naming
@@ -51,7 +51,7 @@ class HomeController extends Controller
         //store in db
         $menu = new Menu();
         $menu->item_name = $request->item_name;
-        $menu->available_boxes = $request->available_boxes;
+        $menu->price = $request->price;
         $menu->image = $imageName;
         //    $menu->is_active = $request->is_active;
         $menu->save();
@@ -63,6 +63,12 @@ class HomeController extends Controller
 //
 //        $images->save();
 
-        return redirect('/home')->with('alert', 'Item Added Successfully');
+        return redirect('/home')->with('success', 'Item Added Successfully');
+    }
+    public function delete($id)
+    {
+        $item = Menu::find($id);
+        $item->delete();
+        return back()->with('alert', 'Item Deleted Successfully');
     }
 }
