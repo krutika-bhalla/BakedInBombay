@@ -24,6 +24,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
     public function index()
     {
         return view('home');
@@ -42,6 +43,7 @@ class HomeController extends Controller
             'item_name' => 'required | string| max:140',
             //          'is_active' => 'boolean',
             'price' => 'integer | required ',
+            'item_type' => 'required | string',
             'image' => 'required|image|mimes:jpeg,png,jpg|max:999999',
         ]);
 //image naming
@@ -51,6 +53,7 @@ class HomeController extends Controller
         //store in db
         $menu = new Menu();
         $menu->item_name = $request->item_name;
+        $menu->item_type = $request->item_type;
         $menu->price = $request->price;
         $menu->image = $imageName;
         //    $menu->is_active = $request->is_active;

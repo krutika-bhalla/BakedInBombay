@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+{{--    {{dd($menus)}}--}}
 <!-- Start slides -->
 <div id="slides" class="cover-slides">
     <ul class="slides-container">
@@ -120,104 +120,47 @@
         </div>
 
         <div class="row special-list">
+            @foreach($menus as $m)
+                @if($m->item_type == 'cake')
             <div class="col-lg-4 col-md-6 special-grid cakes">
-                <div class="gallery-single fix">
-                    <img src="{{asset('imgs/cake.png')}}" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Blueberry Cheesecake</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $7.79</h5>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 special-grid cakes">
                 <div class="gallery-single fix">
-                    <img src="{{asset('imgs/IMG_9604.jpg')}}" class="img-fluid" alt="Image">
+                    <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
                     <div class="why-text">
-                        <h4>Special Lotus Biscoff Cake</h4>
+                        <h4>{{ucwords($m->item_name)}}</h4>
                         <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $9.79</h5>
+                        <h5>₹ {{$m->price}}</h5>
                     </div>
                 </div>
             </div>
+                @endif
+            @if($m->item_type == 'bread')
+                <div class="col-lg-4 col-md-6 special-grid breads">
 
-            <div class="col-lg-4 col-md-6 special-grid cakes">
-                <div class="gallery-single fix">
-                    <img src="{{asset('imgs/IMG_9745.jpg')}}" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Piña Colada Cake</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $10.79</h5>
+                    <div class="gallery-single fix">
+                        <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
+                        <div class="why-text">
+                            <h4>{{ucwords($m->item_name)}}</h4>
+                            <p>Sed id magna vitae eros sagittis euismod.</p>
+                            <h5>₹ {{$m->price}}</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
+                    @endif
+                @if ($m->item_type == 'brownie')
+                <div class="col-lg-4 col-md-6 special-grid brownies">
 
-            <div class="col-lg-4 col-md-6 special-grid breads">
-                <div class="gallery-single fix">
-                    <img src="{{asset('imgs/IMG_9748.jpg')}}" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Wolnut Banana Bread</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $15.79</h5>
+                    <div class="gallery-single fix">
+                        <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
+                        <div class="why-text">
+                            <h4>{{ucwords($m->item_name)}}</h4>
+                            <p>Sed id magna vitae eros sagittis euismod.</p>
+                            <h5>₹ {{$m->price}}</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid breads">
-                <div class="gallery-single fix">
-                    <img src="{{asset('imgs/bib1.png')}}" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Tea Cake</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $18.79</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid breads">
-                <div class="gallery-single fix">
-                    <img src="{{asset('imgs/IMG_9749.jpg')}}" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Banana Bread</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $20.79</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid brownies">
-                <div class="gallery-single fix">
-                    <img src="{{asset('imgs/brownie.png')}}" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Nutella Cheesecake Brownie Cake</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $25.79</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid brownies">
-                <div class="gallery-single fix">
-                    <img src="{{asset('imgs/IMG_9602.jpg')}}" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Brownie</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $22.79</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 special-grid brownies">
-                <div class="gallery-single fix">
-                    <img src="{{asset('imgs/IMG_9598.jpg')}}" class="img-fluid" alt="Image">
-                    <div class="why-text">
-                        <h4>Special Cakey Brownie</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
-                        <h5> $24.79</h5>
-                    </div>
-                </div>
-            </div>
+                @endif
+            @endforeach
 
         </div>
     </div>

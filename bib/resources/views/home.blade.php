@@ -183,9 +183,20 @@
                             <label for="exampleInputPassword1">Name</label>
                             <input required type="text" name="item_name" class="form-control" id="exampleInputPassword1" placeholder="Name">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Price</label>
-                            <input required type="text" name="price" class="form-control" id="exampleInputPassword1" placeholder="Add Price">
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <label for="exampleInputPassword1">Price</label>
+                                <input required type="text" name="price" class="form-control" id="exampleInputPassword1" placeholder="Add Price">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Type</label>
+                                <select type="text" name="item_type" required class="form-control">
+                                    <option selected>Select</option>
+                                    <option value="cake">Cakes</option>
+                                    <option value="bread">Breads</option>
+                                    <option value="brownie">Brownies</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlFile1">Image</label>

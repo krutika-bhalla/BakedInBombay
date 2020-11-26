@@ -19,6 +19,7 @@ class CreateMenuTable extends Migration
           //  $table->boolean('is_active')->default(true);
             $table->integer('price');
             $table->string('image');
+            $table->string('item_type');
             $table->timestamps();
         });
     }
