@@ -69,11 +69,12 @@
                     <div class="collapse navbar-collapse" id="navbars-rs-food">
                         <ul class="navbar-nav ml-auto">
 {{--                            <li class="nav-item active"><a class="nav-link" href="{{url('/')}}">Home</a></li>--}}
+
+                            <li class="nav-item"><a class="nav-link" href="{{url('/#about')}}">About</a></li>
+{{--                    Scroll spy bootstrap--}}
                             <ul class="nav nav-pills">
                                 <li class="nav-item"><a class="nav-link" href="{{url('/#menu')}}">Menu</a></li>
                             </ul>
-                            <li class="nav-item"><a class="nav-link" href="{{url('/#about')}}">About</a></li>
-{{--                    Scroll spy bootstrap--}}
                             <ul class="nav nav-pills">
                                 <li class="nav-item"><a class="nav-link" href="{{url('/#gallery')}}">Gallery</a></li>
                             </ul>
@@ -88,16 +89,19 @@
 {{--                                    <a class="dropdown-item" href="#">Stuff</a>--}}
 {{--                                </div>--}}
 {{--                            </li>--}}
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                                    <a class="dropdown-item" href="blog.html">blog</a>
-                                    <a class="dropdown-item" href="blog-details.html">blog Single</a>
-                                </div>
-                            </li>
+{{--                            <li class="nav-item dropdown">--}}
+{{--                                <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>--}}
+{{--                                <div class="dropdown-menu" aria-labelledby="dropdown-a">--}}
+{{--                                    <a class="dropdown-item" href="blog.html">blog</a>--}}
+{{--                                    <a class="dropdown-item" href="blog-details.html">blog Single</a>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
 
                         <!-- Authentication Links -->
                         @guest
+{{--                                <ul class="nav nav-pills">--}}
+{{--                                    <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Order Now</a></li>--}}
+{{--                                </ul>--}}
                             <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Login</a></li>
 
                             @if (Route::has('register'))
@@ -105,6 +109,7 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
+
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ ucwords(Auth::user()->name) }}
                                 </a>
@@ -115,7 +120,10 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
+{{--                                    <a class="dropdown-item" href="{{route('home')}}">Add Items</a>--}}
+{{--                                    @if(Auth::user()->user_type == 'admin')--}}
+{{--                                        --}}
+{{--                                    @endif--}}
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
@@ -217,7 +225,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <p class="company-name">All Rights Reserved. &copy; 2020 <a href="#">BakedInBombay</a> Design By :
-                            <a href="https://html.design/">PSSK</a></p>
+                            <a href="{{asset('imgs/uploads/IMG_20200302_122910.jpg')}}">PSSK</a></p>
                     </div>
                 </div>
             </div>
