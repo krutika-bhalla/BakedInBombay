@@ -121,8 +121,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="heading-title text-center">
-                            <h2>Our Specials</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                            <h2>Menu</h2>
+                            <p>Add Items Here!</p>
                         </div>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                                 <div class="why-text">
                                     <h4>{{ucwords($items->item_name)}}</h4>
                                     {{--                            <p>Sed id magna vitae eros sagittis euismod.</p>--}}
-                                    <h5>Rs. {{$items->price}}</h5>
+                                    <h5>₹ {{$items->price}}</h5>
                                     <p></p>
                                     <a href="{{ route('delete', $items->id) }}" class="btn btn-sm btn-outline-danger"><i class="fa fa-times"></i></a>
                                 </div>
