@@ -118,6 +118,14 @@
 
         <div class="menu-box" {{--data-spy="scroll" data-target="#navbar-example2" data-offset="0" id="menu"--}}>
             <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="heading-title text-center">
+                            <h2>Our Specials</h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="row special-list">
                     @foreach($menu_items as $items)
                         <div class="col-lg-4 col-md-6 special-grid">
