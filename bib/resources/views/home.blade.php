@@ -72,6 +72,14 @@
     label{
         font-weight: bold;
     }
+    #rowss{
+        font-size: large;
+        font-weight: bold;
+    }
+    #headss{
+        font-size: 20px;
+        font-weight: bolder;
+    }
 </style>
 
 @if ($user->user_type == 'admin')
@@ -80,7 +88,7 @@
     <div class="table-responsive">
     <table class="table table-striped">
         <thead>
-        <tr>
+        <tr id="headss">
             {{--            <th scope="col"></th>--}}
             <th scope="col">Sr.No</th>
             <th scope="col">Image</th>
@@ -91,10 +99,14 @@
         </thead>
         <tbody>
         @foreach($menu_items as $items)
-            <tr>
+            <tr id="rowss">
 
-                <td>{{ $loop->iteration }}</td>
-                <td>{{$items->image}}</td>
+                <td><b>{{ $loop->iteration }}</b></td>
+                <td>
+                    <a href="{{ asset('imgs/uploads/order_uploads/' . $items->image) }}" target="_blank">
+                        <img src="{{ asset('imgs/uploads/order_uploads/' . $items->image) }}" style="max-height: 85px; max-width: 90px" >
+                    </a>
+                </td>
                 <td>{{ucwords($items->item_name)}}</td>
                 <td>{{$items->price}}</td>
                 <td><a href="{{ route('delete', $items->id) }}" class="btn btn-sm btn-outline-danger"><i class="fa fa-times"></i></a></td>
