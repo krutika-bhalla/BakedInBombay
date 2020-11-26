@@ -83,40 +83,59 @@
 </style>
 
 @if ($user->user_type == 'admin')
-    <br/><br/><br/><br/>
-    {{--        CARD OF MENUS--}}
-    <div class="table-responsive">
-    <table class="table table-striped">
-        <thead>
-        <tr id="headss">
-            {{--            <th scope="col"></th>--}}
-            <th scope="col">Sr.No</th>
-            <th scope="col">Image</th>
-            <th scope="col">Item</th>
-            <th scope="col">Price</th>
-            <th scope="col">Action</th>
-        </tr>
-        </thead>
-        <tbody>
-        @foreach($menu_items as $items)
-            <tr id="rowss">
+{{--    <br/><br/><br/><br/>--}}
+{{--    --}}{{--        CARD OF MENUS--}}
+{{--    <div class="table-responsive">--}}
+{{--    <table class="table table-striped">--}}
+{{--        <thead>--}}
+{{--        <tr id="headss">--}}
+{{--            --}}{{--            <th scope="col"></th>--}}
+{{--            <th scope="col">Sr.No</th>--}}
+{{--            <th scope="col">Image</th>--}}
+{{--            <th scope="col">Item</th>--}}
+{{--            <th scope="col">Price</th>--}}
+{{--            <th scope="col">Action</th>--}}
+{{--        </tr>--}}
+{{--        </thead>--}}
+{{--        <tbody>--}}
+{{--        @foreach($menu_items as $items)--}}
+{{--            <tr id="rowss">--}}
 
-                <td><b>{{ $loop->iteration }}</b></td>
-                <td>
-                    <a href="{{ asset('imgs/uploads/order_uploads/' . $items->image) }}" target="_blank">
-                        <img src="{{ asset('imgs/uploads/order_uploads/' . $items->image) }}" style="max-height: 85px; max-width: 90px" >
-                    </a>
-                </td>
-                <td>{{ucwords($items->item_name)}}</td>
-                <td>{{$items->price}}</td>
-                <td><a href="{{ route('delete', $items->id) }}" class="btn btn-sm btn-outline-danger"><i class="fa fa-times"></i></a></td>
-            </tr>
-        @endforeach
-        </tbody>
-    </table>
-    </div>
+{{--                <td><b>{{ $loop->iteration }}</b></td>--}}
+{{--                <td>--}}
+{{--                    <a href="{{ asset('imgs/uploads/order_uploads/' . $items->image) }}" target="_blank">--}}
+{{--                        <img src="{{ asset('imgs/uploads/order_uploads/' . $items->image) }}" style="max-height: 85px; max-width: 90px" >--}}
+{{--                    </a>--}}
+{{--                </td>--}}
+{{--                <td>{{ucwords($items->item_name)}}</td>--}}
+{{--                <td>{{$items->price}}</td>--}}
+{{--                <td><a href="{{ route('delete', $items->id) }}" class="btn btn-sm btn-outline-danger"><i class="fa fa-times"></i></a></td>--}}
+{{--            </tr>--}}
+{{--        @endforeach--}}
+{{--        </tbody>--}}
+{{--    </table>--}}
+{{--    </div>--}}
 
-
+        <div class="menu-box" {{--data-spy="scroll" data-target="#navbar-example2" data-offset="0" id="menu"--}}>
+            <div class="container">
+                <div class="row special-list">
+                    @foreach($menu_items as $items)
+                        <div class="col-lg-4 col-md-6 special-grid">
+                            <div class="gallery-single fix">
+                                <img src="{{ asset('imgs/uploads/order_uploads/' . $items->image) }}" class="img-fluid" alt="Image">
+                                <div class="why-text">
+                                    <h4>{{ucwords($items->item_name)}}</h4>
+                                    {{--                            <p>Sed id magna vitae eros sagittis euismod.</p>--}}
+                                    <h5>Rs. {{$items->price}}</h5>
+                                    <p></p>
+                                    <a href="{{ route('delete', $items->id) }}" class="btn btn-sm btn-outline-danger"><i class="fa fa-times"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
 <!--   ALERT   -->
 {{--    @if($message = Session::get("success"))--}}
 {{--        <h3 class="text-center text-success">{{$message}}</h3>--}}
