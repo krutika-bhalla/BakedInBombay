@@ -109,7 +109,7 @@
                             @endif
                         @else
                                 <!--<ul class="nav nav-pills">-->
-                                    <li class="nav-item"><a class="nav-link" href="{{url('cart')}}">cart</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="{{url('cart')}}">Cart</a></li>
                                 </ul>
                             <li class="nav-item dropdown">
 
