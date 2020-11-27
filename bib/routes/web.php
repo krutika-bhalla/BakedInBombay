@@ -28,3 +28,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('delete/{id}', [App\Http\Controllers\HomeController::class, 'delete'])->name('delete');
 
 });
+
+Route::get('cart', 'App\Http\Controllers\UserController@cart');
+Route::get('add-to-cart/{id}', 'App\Http\Controllers\UserController@addToCart');
+Route::patch('update-cart', 'App\Http\Controllers\UserController@update');
+Route::delete('remove-from-cart', 'App\Http\Controllers\UserController@remove');

@@ -231,7 +231,7 @@
 {{--    User Side Code on user.blade--}}
 
 @if($user->user_type == 'user')
-    <br/><br/><br/>
+    <br>
     @include('user')
 @endif
 {{--@endforeach--}}
