@@ -80,6 +80,20 @@
         font-size: 20px;
         font-weight: bolder;
     }
+    .btn-outline-danger{
+        color:#dc3545;
+        background-color:transparent;
+        background-image:none;
+        border-color:#dc3545;
+    }
+    .btn-outline-danger:hover{
+        color:#fff;
+        background-color:#dc3545;
+        border-color:#dc3545
+    }
+    .btn-outline-danger.focus,.btn-outline-danger:focus{
+        box-shadow:0 0 0 .2rem rgba(220,53,69,.5);
+    }
 </style>
 
 @if ($user->user_type == 'admin')
