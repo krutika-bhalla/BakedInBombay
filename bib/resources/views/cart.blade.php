@@ -27,7 +27,7 @@
                     </td>
                     <td data-th="Price">${{ $menu_items['price'] }}</td>
                     <td data-th="Quantity">
-                        <input type="number" value="{{ $menu_items['quantity'] }}" class="form-control quantity" />
+                        <input type="number" value="{{ $menu_items['quantity'] }}"  min="1" class="form-control quantity" />
                     </td>
                     <td data-th="Subtotal" class="text-center">${{ $menu_items['price'] * $menu_items['quantity'] }}</td>
                     <td class="actions" data-th="">
@@ -162,7 +162,7 @@
 @endsection
 @section('js-scripts')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+
     <script type="text/javascript">
         $(".update-cart").click(function (e) {
             e.preventDefault();
