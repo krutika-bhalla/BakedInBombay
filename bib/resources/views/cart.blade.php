@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Cart')
+{{--@section('title', 'Cart')--}}
 @section('content')
     <table id="cart" class="table table-hover table-condensed">
         <thead>
@@ -160,7 +160,9 @@
     </style>
 
 @endsection
-@section('scripts')
+@section('js-scripts')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     <script type="text/javascript">
         $(".update-cart").click(function (e) {
             e.preventDefault();
