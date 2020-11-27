@@ -1,6 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
+
+    <style>
+        .btn-outline-new-new-white {
+            color: #fff;
+            background-color: transparent;
+            background-image: none;
+            border-color: #fff;
+        }
+        .btn-outline-new-new-white:hover {
+            color: #cfa671;
+            background-color: #fff;
+            border-color: #fff;
+        }
+    </style>
 {{--    {{dd($menus)}}--}}
 <!-- Start slides -->
 <div id="slides" class="cover-slides">
@@ -128,8 +142,9 @@
                     <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
                     <div class="why-text">
                         <h4>{{ucwords($m->item_name)}}</h4>
-                        <p>Sed id magna vitae eros sagittis euismod.</p>
                         <h5>₹ {{$m->price}}</h5>
+                        <p></p>
+                        <a class="btn btn-lg btn-circle btn-outline-new-new-white" href="{{route('show-menu')}}">Order Now</a>
                     </div>
                 </div>
             </div>
@@ -141,8 +156,9 @@
                         <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>{{ucwords($m->item_name)}}</h4>
-                            <p>Sed id magna vitae eros sagittis euismod.</p>
                             <h5>₹ {{$m->price}}</h5>
+                            <p></p>
+                            <a class="btn btn-lg btn-circle btn-outline-new-new-white" href="{{route('show-menu')}}">Order Now</a>
                         </div>
                     </div>
                 </div>
@@ -154,8 +170,9 @@
                         <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
                         <div class="why-text">
                             <h4>{{ucwords($m->item_name)}}</h4>
-                            <p>Sed id magna vitae eros sagittis euismod.</p>
                             <h5>₹ {{$m->price}}</h5>
+                            <p></p>
+                            <a class="btn btn-lg btn-circle btn-outline-new-new-white" href="{{route('show-menu')}}">Order Now</a>
                         </div>
                     </div>
                 </div>
