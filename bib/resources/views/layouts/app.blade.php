@@ -110,7 +110,7 @@
                         @else
                                 <!--<ul class="nav nav-pills">-->
                                     <li class="nav-item"><a class="nav-link" href="{{url('cart')}}">Cart</a></li>
-                                </ul>
+{{--                                </ul>--}}
                             <li class="nav-item dropdown">
 
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
