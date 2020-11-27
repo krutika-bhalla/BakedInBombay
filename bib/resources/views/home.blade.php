@@ -232,7 +232,66 @@
 
 @if($user->user_type == 'user')
     <br/><br/><br/>
-    @include('user')
+{{--    @include('user')--}}
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="special-menu text-center">
+                <div class="button-group filter-button-group">
+                    <button class="active" data-filter="*">All</button>
+                    <button data-filter=".cakes">Cakes</button>
+                    <button data-filter=".breads">Breads</button>
+                    <button data-filter=".brownies">Brownies</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row special-list">
+        @foreach($menu_items as $m)
+            @if($m->item_type == 'cake')
+                <div class="col-lg-4 col-md-6 special-grid cakes">
+
+                    <div class="gallery-single fix">
+                        <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
+                        <div class="why-text">
+                            <h4>{{ucwords($m->item_name)}}</h4>
+                            <p>Sed id magna vitae eros sagittis euismod.</p>
+                            <h5>₹ {{$m->price}}</h5>
+                        </div>
+                    </div>
+                </div>
+            @endif
+            @if($m->item_type == 'bread')
+                <div class="col-lg-4 col-md-6 special-grid breads">
+
+                    <div class="gallery-single fix">
+                        <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
+                        <div class="why-text">
+                            <h4>{{ucwords($m->item_name)}}</h4>
+                            <p>Sed id magna vitae eros sagittis euismod.</p>
+                            <h5>₹ {{$m->price}}</h5>
+                        </div>
+                    </div>
+                </div>
+            @endif
+            @if ($m->item_type == 'brownie')
+                <div class="col-lg-4 col-md-6 special-grid brownies">
+
+                    <div class="gallery-single fix">
+                        <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
+                        <div class="why-text">
+                            <h4>{{ucwords($m->item_name)}}</h4>
+                            <p>Sed id magna vitae eros sagittis euismod.</p>
+                            <h5>₹ {{$m->price}}</h5>
+                        </div>
+                    </div>
+                </div>
+            @endif
+        @endforeach
+
+    </div>
+
+
 @endif
 {{--@endforeach--}}
 @endsection
