@@ -129,6 +129,42 @@
 {{--        </tbody>--}}
 {{--    </table>--}}
 {{--    </div>--}}
+<style>
+    .button {
+        background-color: #008CBA; /* Green */
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    .button1 {
+        background-color: white;
+        color: black;
+        border: 2px solid #008CBA;
+    }
+    .button1:hover {
+        background-color: #008CBA;
+        color: white;
+    }
+    .btn-outline-new-new-white {
+        color: #fff;
+        background-color: transparent;
+        background-image: none;
+        border-color: #fff;
+    }
+    .btn-outline-new-new-white:hover {
+        color: #cfa671;
+        background-color: #fff;
+        border-color: #fff;
+    }
+</style>
 
         <div class="menu-box" {{--data-spy="scroll" data-target="#navbar-example2" data-offset="0" id="menu"--}}>
             <div class="container">
@@ -145,12 +181,14 @@
                         <div class="col-lg-4 col-md-6 special-grid">
                             <div class="gallery-single fix">
                                 <img src="{{ asset('imgs/uploads/order_uploads/' . $items->image) }}" class="img-fluid" alt="Image">
-                                <div class="why-text">
+                                <div class="why-text" align="center">
+                                    <br><br><br>
                                     <h4>{{ucwords($items->item_name)}}</h4>
                                     {{--                            <p>Sed id magna vitae eros sagittis euismod.</p>--}}
                                     <h5>₹ {{$items->price}}</h5>
-                                    <p></p>
-                                    <a href="{{ route('delete', $items->id) }}" class="btn btn-sm btn-outline-danger"><i class="fa fa-times"></i></a>
+                                    <h5>
+                                    <a href="{{ route('delete', $items->id) }}" class="btn btn-lg btn-circle btn-outline-new-new-white">Delete</a>
+                                    </h5>
                                 </div>
                             </div>
                         </div>
@@ -176,10 +214,11 @@
     </script>
     <!-- Button trigger modal -->
         <div align="center">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+        <button type="button" class="button button1" data-toggle="modal" data-target="#exampleModalCenter">
             Add Items
         </button>
         </div>
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">

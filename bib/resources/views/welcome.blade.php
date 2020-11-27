@@ -137,14 +137,15 @@
             @foreach($menus as $m)
                 @if($m->item_type == 'cake')
             <div class="col-lg-4 col-md-6 special-grid cakes">
-
                 <div class="gallery-single fix">
                     <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
-                    <div class="why-text">
+                    <div class="why-text" align="center">
+                        <br><br><br>
                         <h4>{{ucwords($m->item_name)}}</h4>
                         <h5>₹ {{$m->price}}</h5>
-                        <p></p>
+                        <h5>
                         <a class="btn btn-lg btn-circle btn-outline-new-new-white" href="{{route('show-menu')}}">Order Now</a>
+                        </h5>
                     </div>
                 </div>
             </div>
@@ -154,11 +155,13 @@
 
                     <div class="gallery-single fix">
                         <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
-                        <div class="why-text">
+                        <div class="why-text" align="center">
+                            <br><br><br>
                             <h4>{{ucwords($m->item_name)}}</h4>
                             <h5>₹ {{$m->price}}</h5>
-                            <p></p>
+                            <h5>
                             <a class="btn btn-lg btn-circle btn-outline-new-new-white" href="{{route('show-menu')}}">Order Now</a>
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -168,11 +171,13 @@
 
                     <div class="gallery-single fix">
                         <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
-                        <div class="why-text">
+                        <div class="why-text" align="center">
+                            <br><br><br>
                             <h4>{{ucwords($m->item_name)}}</h4>
                             <h5>₹ {{$m->price}}</h5>
-                            <p></p>
+                            <h5>
                             <a class="btn btn-lg btn-circle btn-outline-new-new-white" href="{{route('show-menu')}}">Order Now</a>
+                            </h5>
                         </div>
                     </div>
                 </div>
