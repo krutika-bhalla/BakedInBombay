@@ -1,4 +1,6 @@
+@extends('layouts.app')
 
+@section('content')
 {{--<h1 class="display-1"></h1>--}}
 {{--{{dd($menu_items)}}--}}
 <script src="js/jquery-3.2.1.min.js"></script>
@@ -114,3 +116,4 @@
         alert(msg);
     }
 </script>
+@endsection
