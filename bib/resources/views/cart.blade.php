@@ -23,15 +23,16 @@
                     <?php $total += $menu_items['price'] * $menu_items['quantity'] ?>
                     <tr>
                         <td data-th="Product">
-                            <div class="row">
+                            {{--<div class="row">
 
-                                <div class="col-sm-3 hidden-xs"><img src="{{asset('imgs/uploads/order_uploads/'. $menu_items['image'])}}" width="100" height="100" class="img-responsive"/></div>
+                                <div class="col-sm-3 hidden-xs" style="text-align: center">--}}<img src="{{asset('imgs/uploads/order_uploads/'. $menu_items['image'])}}" width="100" height="100" class="center img-responsive" align="middle" style="display: block; margin-left: auto;
+  margin-right: auto;"/></div>
 {{--                                <div class="col-sm-9">--}}
 {{--                                    --}}
 {{--                                </div>--}}
-                            </div>
+{{--                            </div>--}}
                         </td>
-                        <td><h3 class="nomargin" name="product_name" value="{{$menu_items['item_name']}}">{{ ucwords($menu_items['item_name']) }}</h3></td>
+                        <td data-th="Product Name" style="text-align: center" name="product_name" value="{{$menu_items['item_name']}}">{{ ucwords($menu_items['item_name']) }}</td>
                         <td data-th="Price">{{ $menu_items['price'] }}</td>
                         <td data-th="Quantity">
                             <input type="number" name="quantity" value="{{ $menu_items['quantity'] }}"  min="1" class="form-control quantity" />
@@ -47,19 +48,23 @@
             </tbody>
             <tfoot>
 
-            <tr class="visible-xs">
+{{--            <tr class="visible-xs">--}}
 
-                    <td class="text-center"><strong>Total ₹ <input name="price" value=" {{ $total }}" readonly></strong></td>
+{{--                    <td class="text-center"><strong>Total ₹ <input name="price" value=" {{ $total }}" readonly></strong></td>--}}
 
-            </tr>
+{{--            </tr>--}}
             <tr>
                 <td><a href="{{ url('/home') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
-                <td colspan="2" class="hidden-xs"></td>
-                <td class="hidden-xs text-center"><strong>Total ₹ {{ $total }}</strong></td>
+                <td class="hidden-xs" colspan="3"></td>
+{{--                <td class="hidden-xs"></td>--}}
+{{--                <td class="hidden-xs"></td>--}}
+                <td class="text-center"><strong>Total ₹ <input name="price" value=" {{ $total }}" readonly></strong></td>
+                <td><button type="submit" class="btn btn-primary">Place Order</button></td>
             </tr>
             </tfoot>
         </table>
-        <button type="submit" class="btn btn-primary">Place Order</button>
+{{--        <div style="text-align:center;"><button type="submit" class="btn btn-primary btn-place" style="text-align:center;">Place Order</button></div>--}}
+
     </form>
     <style>
         .main-section{
@@ -141,10 +146,12 @@
         .btn-holder{
             text-align: center;
         }
+        .table>thead>tr>th {text-align: center;}
         .table>tbody>tr>td, .table>tfoot>tr>td{
             vertical-align: middle;
+            text-align: center;
         }
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 767px) {
             table#cart tbody td .form-control{
                 width:20%;
                 display: inline !important;
@@ -160,15 +167,15 @@
                 float:right;
             }
             table#cart thead { display: none; }
-            table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+            table#cart tbody td { display: block; padding: .6rem; min-width:320px; }
             table#cart tbody tr td:first-child { background: #333; color: #fff; }
             table#cart tbody td:before {
                 content: attr(data-th); font-weight: bold;
-                display: inline-block; width: 8rem;
+                display: block; /*width: 8rem;*/
             }
             table#cart tfoot td{display:block; }
-            table#cart tfoot td .btn{display:block;}
-        }
+            /*table#cart tfoot td .btn{display:block;}*/
+            /*.btn-place{display: inline}*/
     </style>
 
 @endsection
