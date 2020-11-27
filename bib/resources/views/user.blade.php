@@ -3,17 +3,6 @@
 @section('content')
 {{--<h1 class="display-1"></h1>--}}
 {{--{{dd($menu_items)}}--}}
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-{{--<script src="js/bootstrap.min.js"></script>--}}
-<!-- ALL PLUGINS -->
-<script src="js/jquery.superslides.min.js"></script>
-<script src="js/images-loded.min.js"></script>
-<script src="js/isotope.min.js"></script>
-<script src="js/baguetteBox.min.js"></script>
-<script src="js/form-validator.min.js"></script>
-<script src="js/contact-form-script.js"></script>
-<script src="js/custom.js"></script>
 <style>
     .btn-outline-new-new-white {
         color: #fff;
@@ -109,11 +98,26 @@
         font-size: 18px;
     }
 </style>
-<script>
-    var msg = '{{Session::get('success')}}';
-    var exist = '{{Session::has('success')}}';
-    if(exist){
-        alert(msg);
-    }
-</script>
+
+@endsection
+
+@section('js-scripts')
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    {{--<script src="js/bootstrap.min.js"></script>--}}
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        var msg = '{{Session::get('success')}}';
+        var exist = '{{Session::has('success')}}';
+        if(exist){
+            alert(msg);
+        }
+    </script>
 @endsection
