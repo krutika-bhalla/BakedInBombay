@@ -279,9 +279,17 @@
                     @enderror
                 </div>
             </div>
+            <div class="form-group">
+                <input id="address" type="text" placeholder="Add Address" class="form-group @error('address') is-invalid @enderror" name="address" required autocomplete="address">
+                @error('address')
+                <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
 
 
-{{--            <a type="button">--}}
+                {{--            <a type="button">--}}
 {{--                <span></span>--}}
 {{--                <span></span>--}}
 {{--                <span></span>--}}

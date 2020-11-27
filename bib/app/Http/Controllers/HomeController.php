@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Menu;
-use App\Models\Images;
+use App\Models\Products;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -59,13 +59,6 @@ class HomeController extends Controller
         //    $menu->is_active = $request->is_active;
         $menu->save();
 
-
-//store in db
-//        $images = new Images();
-//        $images->menu_id = $menu->id;
-//
-//        $images->save();
-
         return redirect('/home')->with('success', 'Item Added Successfully');
     }
     public function delete($id)
@@ -74,4 +67,22 @@ class HomeController extends Controller
         $item->delete();
         return back()->with('alert', 'Item Deleted Successfully');
     }
+
+    public function saveDetails(Request $request){
+//        dd($request->all());
+        $products = Products::all();
+        $menu = Menu::all();
+        $users = Auth::User();
+        $request->validate([
+            'price' => 'integer | required ',
+        ]);
+        $product = new Products();
+        $user_id = Auth::User()->id;
+        $product->price = $request->price;
+        $product->user_id = $user_id;
+        $product->save();
+        return view('checkout')->with('success', 'Thank You for ordering with us')->with('menu', $menu)->with('products', $products)->with('users',$users);
+
+    }
+//
 }

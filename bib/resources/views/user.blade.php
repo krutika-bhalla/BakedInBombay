@@ -43,6 +43,7 @@
         @if($m->item_type == 'cake')
             <div class="col-lg-4 col-md-6 special-grid cakes">
                 <div class="gallery-single fix">
+
                     <img src="{{asset('imgs/uploads/order_uploads/'. $m->image)}}" class="img-fluid" alt="Image">
                     <div class="why-text" align="center">
                         <br><br><br>

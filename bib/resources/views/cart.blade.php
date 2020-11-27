@@ -1,54 +1,66 @@
 @extends('layouts.app')
 {{--@section('title', 'Cart')--}}
 @section('content')
-    <table id="cart" class="table table-hover table-condensed">
-        <thead>
-        <tr>
-            <th style="width:50%">Product</th>
-            <th style="width:10%">Price</th>
-            <th style="width:8%">Quantity</th>
-            <th style="width:22%" class="text-center">Subtotal</th>
-            <th style="width:10%"></th>
-        </tr>
-        </thead>
-        <tbody>
-        <?php $total = 0 ?>
-        @if(session('cart'))
-            @foreach(session('cart') as $id => $menu_items)
-                <?php $total += $menu_items['price'] * $menu_items['quantity'] ?>
-                <tr>
-                    <td data-th="Product">
-                        <div class="row">
-                            <div class="col-sm-3 hidden-xs"><img src="{{asset('imgs/uploads/order_images/'. $menu_items['image'])}}" width="100" height="100" class="img-responsive"/></div>
-                            <div class="col-sm-9">
-                                <h4 class="nomargin">{{ ucwords($menu_items['item_name']) }}</h4>
+    <br/><br/><br/>
+    <form method="POST" action="{{route('save-total-amount')}}">
+        @csrf
+        <table id="cart" class="table table-hover table-condensed">
+            <thead>
+            <tr>
+                <th style="width:20%">Product</th>
+                <th style="width:20%">Product Name</th>
+                <th style="width:10%">Price</th>
+                <th style="width:8%">Quantity</th>
+                <th style="width:22%" class="text-center">Subtotal</th>
+                <th style="width:10%"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <?php $total = 0 ?>
+            @if(session('cart'))
+                @foreach(session('cart') as $id => $menu_items)
+    {{--                {{dump($menu_items['image'])}}--}}
+                    <?php $total += $menu_items['price'] * $menu_items['quantity'] ?>
+                    <tr>
+                        <td data-th="Product">
+                            <div class="row">
+
+                                <div class="col-sm-3 hidden-xs"><img src="{{asset('imgs/uploads/order_uploads/'. $menu_items['image'])}}" width="100" height="100" class="img-responsive"/></div>
+{{--                                <div class="col-sm-9">--}}
+{{--                                    --}}
+{{--                                </div>--}}
                             </div>
-                        </div>
-                    </td>
-                    <td data-th="Price">{{ $menu_items['price'] }}</td>
-                    <td data-th="Quantity">
-                        <input type="number" value="{{ $menu_items['quantity'] }}"  min="1" class="form-control quantity" />
-                    </td>
-                    <td data-th="Subtotal" class="text-center">₹ {{ $menu_items['price'] * $menu_items['quantity'] }}</td>
-                    <td class="actions" data-th="">
-                        <button class="btn btn-info btn-sm update-cart" data-id="{{ $id }}"><i class="fa fa-refresh"></i></button>
-                        <button class="btn btn-danger btn-sm remove-from-cart" data-id="{{ $id }}"><i class="fa fa-trash-o"></i></button>
-                    </td>
-                </tr>
-            @endforeach
-        @endif
-        </tbody>
-        <tfoot>
-        <tr class="visible-xs">
-            <td class="text-center"><strong>Total ₹ {{ $total }}</strong></td>
-        </tr>
-        <tr>
-            <td><a href="{{ url('/home') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
-            <td colspan="2" class="hidden-xs"></td>
-            <td class="hidden-xs text-center"><strong>Total ₹ {{ $total }}</strong></td>
-        </tr>
-        </tfoot>
-    </table>
+                        </td>
+                        <td><h3 class="nomargin" name="product_name" value="{{$menu_items['item_name']}}">{{ ucwords($menu_items['item_name']) }}</h3></td>
+                        <td data-th="Price">{{ $menu_items['price'] }}</td>
+                        <td data-th="Quantity">
+                            <input type="number" name="quantity" value="{{ $menu_items['quantity'] }}"  min="1" class="form-control quantity" />
+                        </td>
+                        <td data-th="Subtotal" class="text-center" name="price" value="{{ $menu_items['price'] * $menu_items['quantity'] }}">₹ {{ $menu_items['price'] * $menu_items['quantity'] }}</td>
+                        <td class="actions" data-th="">
+                            <button class="btn btn-info btn-sm update-cart" data-id="{{ $id }}"><i class="fa fa-refresh"></i></button>
+                            <button class="btn btn-danger btn-sm remove-from-cart" data-id="{{ $id }}"><i class="fa fa-trash-o"></i></button>
+                        </td>
+                    </tr>
+                @endforeach
+            @endif
+            </tbody>
+            <tfoot>
+
+            <tr class="visible-xs">
+
+                    <td class="text-center"><strong>Total ₹ <input name="price" value=" {{ $total }}" readonly></strong></td>
+
+            </tr>
+            <tr>
+                <td><a href="{{ url('/home') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+                <td colspan="2" class="hidden-xs"></td>
+                <td class="hidden-xs text-center"><strong>Total ₹ {{ $total }}</strong></td>
+            </tr>
+            </tfoot>
+        </table>
+        <button type="submit" class="btn btn-primary">Place Order</button>
+    </form>
     <style>
         .main-section{
             background-color: #F8F8F8;

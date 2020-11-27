@@ -21,8 +21,7 @@ class DatabaseSeeder extends Seeder
             'mobile_number' => '7666998477',
             'password' => Hash::make('bib@16/3'),
             'user_type' => 'admin',
-            'address' => 'nullable',
-            'no_of_items' => '0',
+            'address' => 'Balaram Babu Khedekar Marg, Ram nagar, Wadala West, Wadala, Mumbai, Maharashtra 400031',
         ]);
     }
 }

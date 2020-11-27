@@ -26,6 +26,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'showMenu'])->name('show-menu');
     //Route::get('/tester',[App\Http\Controllers\MenuController::class, 'storeMenu'])->name('save-menu');
     Route::get('delete/{id}', [App\Http\Controllers\HomeController::class, 'delete'])->name('delete');
+//    Route::get('/checkout', [App\Http\Controllers\HomeController::class, 'checkout'])->name('checkout');
+    Route::post('/checkout', [App\Http\Controllers\HomeController::class, 'saveDetails'])->name('save-total-amount');
+    //Route::get('/order-placed',)
 
 });
 
