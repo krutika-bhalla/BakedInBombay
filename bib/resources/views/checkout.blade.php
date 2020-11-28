@@ -10,6 +10,7 @@
     }
 </script>
     <div class="card" align="center">
+        <div class="container">
 <h2>ThankYou For Ordering with Us!</h2>
     <h2>Order Summary</h2>
 {{--    @foreach($users as $u)--}}
@@ -20,6 +21,7 @@
     @foreach($products as $p)
         <label>Total Amount: ₹ </label> {{$p->price}}
     @endforeach
+    </div>
     </div>
 
 
