@@ -14,7 +14,7 @@
 <h2>ThankYou For Ordering with Us!</h2>
     <h2>Order Summary</h2>
 {{--    @foreach($users as $u)--}}
-        <label>Name: </label> {{$users->name}}<br>
+        <label>Name: </label> {{ucwords($users->name)}}<br>
         <label>Address: </label> {{$users->address}}<br>
         <label>Mobile Number: </label> {{$users->mobile_number}}<br>
 {{--    @endforeach--}}

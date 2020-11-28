@@ -20,12 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aee700c8-2c6c-420f-9781-a3fe1297d457" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/BakedInBombay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BakedInBombay.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bib/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/bib/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bib/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/bib/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bib/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/bib/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/bib/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606410870.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606417070.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606418061.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606418093.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606418119.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606418168.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606418219.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606418273.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606449020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606449053.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606449761.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606449840.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606450005.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606452943.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bib/public/imgs/uploads/order_uploads/1606453038.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,6 +197,7 @@
       <workItem from="1604747488443" duration="3757000" />
       <workItem from="1606397808558" duration="623000" />
       <workItem from="1606449285917" duration="2495000" />
+      <workItem from="1606544165059" duration="360000" />
     </task>
     <servers />
   </component>
